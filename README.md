@@ -4,8 +4,8 @@ Coding Convention Frontend
 *   1[Generell](#CodeConventions-Generell)
 
     *   1.1[.editorconfig](#CodeConventions-.editorconfig)
-    *   1.2[Bezeichnungen](#CodeConventions-BezeichnungenBezeichnungen)
-    *   1.3[Kommentare](#CodeConventions-KommentareKommentare)
+    *   1.2[Bezeichnungen](#CodeConventions-Bezeichnungen)
+    *   1.3[Kommentare](#CodeConventions-Kommentare)
 
 *   2[Git](#CodeConventions-Git)
 *   3[Frontend](#CodeConventions-Frontend)
@@ -19,15 +19,15 @@ Coding Convention Frontend
         *   3.3[Javascript](#CodeConventions-Javascript)
     *   3.4[Assets Allgemein](#CodeConventions-AssetsAllgemein)
 
-            *   3.4.1[Naming](#CodeConventions-Naming.1)
+            *   3.4.1[Naming](#CodeConventions-Naming)
 
 * * *
 
-## <a name="Generell"></a>Generell
+## <a name="CodeConventions-Generell"></a>Generell
 
 **!HINWEIS: **Dieser Bereich ist ein Living-Standard. Sollte es jedoch Änderungen am Codestyle geben, müssen diese unverzüglich dem Team kommuniziert werden.
 
-### <a name="Generell"></a>.editorconfig
+### <a name="CodeConventions-.editorconfig"></a>.editorconfig
 
 Es wird prinzipiell eine '.editorconfig' angelegt, die den Grundlegenden Codestyle wiedergibt. (Beispiel [.editorconfig](.editorconfig)) Alle Sprachspezifischen Abweichungen werden hier zusätzlich notiert. [Weiterführende Informationen zum thema .editorconfig unter: editorconfig.org](http://editorconfig.org)
 
@@ -48,15 +48,15 @@ Sollte die IDE die Datei nicht interpretieren können sollte ein entsprechendes 
 
 Also Spaces statt Tabs, Einrückungsgröße 4 Leerzeichen, Unix-style newlines, utf-8, Entferung von unbenutzten Leerzeichen, Zuletzt immer ein Zeilenumbruch.
 
-### <a name="Bezeichnungen"></a>Bezeichnungen
+### <a name="CodeConventions-Bezeichnungen"></a>Bezeichnungen
 
 Klassennamen, Funktionsnamen und Variablen müssen erkennen lassen was oder wofür sie etwas machen -> in Englisch.
 
-### <a name="Kommentare"></a>Kommentare
+### <a name="CodeConventions-Kommentare"></a>Kommentare
 
 Nicht selbsterklärender Code sollte kommentiert werden. Warum macht der Code etwas, nicht was macht der Code -> in Englisch.
 
-## <a name="Git"></a>Git
+## <a name="CodeConventions-Git"></a>Git
 
 Commitmessages werden sofern mit Ticketsystem gearbeitet wird, mit der Ticket ID geprefixt. Zum Beispiel: 
 
@@ -70,13 +70,13 @@ oder
     git commit -m"[BDT-18] config the User Agent Sniffing for Android devices"
 ```
 
-## <a name="Frontend"></a>Frontend
+## <a name="CodeConventions-Frontend"></a>Frontend
 
 Für den Frontendpart gilt: Es wird sich an die Global definierten Codestyles gehalten. Ausnahmen: '.json' und '.js' Dateien. Hier bietet es sich an mit 2 Spaces Einrückung zu arbeiten.
 
 Für den gesamten Frontendbereich gilt: Wir arbeiten mobile first und vermeiden Redundanz. Bevor eine Zeile Code in das Projekt kommt, wird erst einmal analysiert ob eine Zeile Code entfernt werden kann.
 
-### <a name="HTML"></a>HTML
+### <a name="CodeConventions-HTML"></a>HTML
 
 *   Semantische Auszeichnung aller Module nach den HTML5 Standards.
 *   Grundlagen der Zugänglichkeit und Benutzererfahrung wahren und im Zweifel Feedbackrunden mit Grafik oder Projektmanagement
@@ -94,7 +94,7 @@ Für den gesamten Frontendbereich gilt: Wir arbeiten mobile first und vermeiden 
     ```
 
 
-### <a name="CSS / SASS"></a>CSS / SASS
+### <a name="CodeConventions-CSS/SASS"></a>CSS / SASS
 
 *   Alle Klassennamen werden per Separator (-) getrennt. Kein CamelCase, keine Großbuchstaben. Gleiches gilt für Placeholder und Mixins. Ausnahme hier sind Funktionen, welche in CamelCase geschrieben werden.
 *   Es werden Klassen bevorzugt und keine ID´s gestyled.
@@ -105,7 +105,7 @@ Für den gesamten Frontendbereich gilt: Wir arbeiten mobile first und vermeiden 
 *   @extend nur per %placeholder, kein direktes extenden von Selektoren
 
 
-#### <a name="Dokumentation"></a>Dokumentation
+#### <a name="CodeConventions-Dokumentation"></a>Dokumentation
 
 *   Dependencies müssen im Code dokumentiert werden.
 *   Funktionen und Mixins müssen dokumentiert werden.
@@ -201,7 +201,7 @@ Beispiele:
      }
 ```
 
-#### <a name="Naming"></a>Naming
+#### <a name="CodeConventions-Naming"></a>Naming
 
 *   siehe [Generell -> Bezeichnungen](#CodeConventions-Bezeichnungen)
 *   Klassennamen und Id´s sollten Modular aufgebaut werden.
@@ -276,7 +276,7 @@ Partials werden mit Underscore geprefixt. Bsp.: _buttons.scss, _clearfix.scss un
         *   _navigation.scss
 
 
-### <a name="Javascript"></a>Javascript
+### <a name="CodeConventions-Javascript"></a>Javascript
 
 *   Naming siehe [Generell -&gt; Bezeichnungen](#CodeConventions-Bezeichnungen)
 *   Module sollten einzeln angelegt werden und je nach Größe und globalen Umfang des Projektes entweder minifiziert und gemerged ausgegeben werden, oder per Dependencie-Loader nachgeladen werden.
@@ -286,11 +286,11 @@ Partials werden mit Underscore geprefixt. Bsp.: _buttons.scss, _clearfix.scss un
 
 Bereich Javascript kann gerne noch erweitert werden,
 
-### <a name="Assets Allgemein"></a>Assets Allgemein
+### <a name="CodeConventions-AssetsAllgemein"></a>Assets Allgemein
 
 *   User generierter Content hat nichts im GIT zu suchen
 
-#### <a name="Naming"></a>Naming
+#### <a name="CodeConventions-Naming"></a>Naming
 
 *   Sinnvolle Benennung in der entsprechenden Landessprache. Ausnahme Design-Assets -&gt; Benennung Global, bzw. Modulbasiert, einheitlich in Englischer Sprache.
 *   Dateibenennung der Assets kein CamelCase, keine Gro&szlig;buchstaben, Trennung der Wörter durch Seperator (-) statt Underscore (_).
