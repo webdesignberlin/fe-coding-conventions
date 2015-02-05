@@ -1,25 +1,19 @@
 # fe-coding-conventions
 Coding Convention Frontend
 
-*   1[Generell](#CodeConventions-Generell)
-
-    *   1.1[.editorconfig](#CodeConventions-.editorconfig)
-    *   1.2[Bezeichnungen](#CodeConventions-Bezeichnungen)
-    *   1.3[Kommentare](#CodeConventions-Kommentare)
-
-*   2[Git](#CodeConventions-Git)
-*   3[Frontend](#CodeConventions-Frontend)
-
-    *   3.1[HTML](#CodeConventions-HTML)
-    *   3.2[CSS / SASS](#CodeConventions-CSS/SASS)
-
-            *   3.2.1[Dokumentation](#CodeConventions-Dokumentation)
-        *   3.2.2[Naming](#CodeConventions-Naming)
-
-        *   3.3[Javascript](#CodeConventions-Javascript)
-    *   3.4[Assets Allgemein](#CodeConventions-AssetsAllgemein)
-
-            *   3.4.1[Naming](#CodeConventions-Naming)
+1 [Generell](#CodeConventions-Generell)
+   1.1 [.editorconfig](#CodeConventions-.editorconfig)
+   1.2 [Bezeichnungen](#CodeConventions-Bezeichnungen)
+   1.3 [Kommentare](#CodeConventions-Kommentare)
+2 [Git](#CodeConventions-Git)
+3 [Frontend](#CodeConventions-Frontend)
+   3.1 [HTML](#CodeConventions-HTML)
+   3.2 [CSS / SASS](#CodeConventions-CSS/SASS)
+      3.2.1 [Dokumentation](#CodeConventions-Dokumentation)
+      3.2.2 [Naming](#CodeConventions-Naming)
+   3.3 [Javascript](#CodeConventions-Javascript)
+   3.4 [Assets Allgemein](#CodeConventions-AssetsAllgemein)
+      3.4.1 [Naming](#CodeConventions-Naming)
 
 * * *
 
