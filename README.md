@@ -32,12 +32,12 @@ Sollte die IDE die Datei nicht interpretieren können sollte ein entsprechendes 
 **Vorschlag (Anhand: [.editorconfig](.editorconfig)):**
 
 ```sh
-    indent_style=space
-    indent_size = 4
-    end_of_line = lf
-    charset = utf-8
-    trim_trailing_whitespace = true
-    insert_final_newline = true
+  indent_style=space
+  indent_size = 4
+  end_of_line = lf
+  charset = utf-8
+  trim_trailing_whitespace = true
+  insert_final_newline = true
 ```
 
 Also Spaces statt Tabs, Einrückungsgröße 4 Leerzeichen, Unix-style newlines, utf-8, Entferung von unbenutzten Leerzeichen, Zuletzt immer ein Zeilenumbruch.
@@ -55,13 +55,13 @@ Nicht selbsterklärender Code sollte kommentiert werden. Warum macht der Code et
 Commitmessages werden sofern mit Ticketsystem gearbeitet wird, mit der Ticket ID geprefixt. Zum Beispiel: 
 
 ```sh
-    git commit -m"[BDT-21] add Imprint Styles"
+  git commit -m"[BDT-21] add Imprint Styles"
 ```
 
 oder
 
 ```sh
-    git commit -m"[BDT-18] config the User Agent Sniffing for Android devices"
+  git commit -m"[BDT-18] config the User Agent Sniffing for Android devices"
 ```
 
 ## <a name="CodeConventions-Frontend"></a>Frontend
@@ -80,11 +80,11 @@ Für den gesamten Frontendbereich gilt: Wir arbeiten mobile first und vermeiden 
 *   Nicht selbsterklärender Code sollte kommentiert werden. Warum macht der Code etwas, nicht was macht der Code. Siehe: [Allgemein -> Kommentare](#CodeConventions-Kommentare)
 *   HTML-Kommentare werden wie folgt verfasst:
     ```html
-        <!-- + Beschreibung/Modulname -->
+      <!-- + Beschreibung/Modulname -->
     ```
     Bei längeren Modulen oder Bereichen wird dieser auch wieder geschlossen.
     ```html
-        <!-- = Beschreibung/Modulname -->
+      <!-- = Beschreibung/Modulname -->
     ```
 
 
@@ -107,92 +107,92 @@ Für den gesamten Frontendbereich gilt: Wir arbeiten mobile first und vermeiden 
 *   Initial werden wir für die Dokumentation von css/scss/sass Dateien auf eine PHPDoc-nahe Adaption für SASS zurückgreifen ([SassDoc ](http://sassdoc.com/)[http://sassdoc.com/](http://sassdoc.com/)[).](http://sassdoc.com/)
 
 ```scss
-    /**
-     * + Modulname
-     * Beschreibung
-     *
-     * @type {partial} (#)
-     *
-     * @link http://www.link-to-example/description/source.com (#)
-     *
-     * @requires {type} name (#)
-     *
-     * @example (#)
-     * <div class="content-box">
-     * <h2 class="content-box__headline">This is a headline</h2>
-     * </div>
-     */
+  /**
+    * + Modulname
+    * Beschreibung
+    *
+    * @type {partial} (#)
+    *
+    * @link http://www.link-to-example/description/source.com (#)
+    *
+    * @requires {type} name (#)
+    *
+    * @example (#)
+    * <div class="content-box">
+    * <h2 class="content-box__headline">This is a headline</h2>
+    * </div>
+  */
 ```
 
 CSS-Kommentare werden wie folgt verfasst:
 
 ```css
-    // + Modulname
+  // + Modulname
 ```
 
 Bei längeren Modulen oder Bereichen wird dieser auch wieder geschlossen.
 
 ```css
-    // = Modulname
+  // = Modulname
 ```
 
 Bei längeren Kommentaren:
 
 ```css
-    /**
-     * + Modulname
-     *
-     * Beschreibung Lorem Ipsum
-     * Dolore
-     * Blubb ...
-     */
+  /**
+   * + Modulname
+   *
+   * Beschreibung Lorem Ipsum
+   * Dolore
+   * Blubb ...
+  */
 ```
 
 Beispiele:
 
 ```scss
-    /**
-     * Function to calculate Fontsize in 'rem'
-     *
-     * @group Fonts
-     *
-     * @param {int} $size - Fontsize as integer
-     *
-     * @author mg, fh
-     *
-     * @returns {int} returns calculated rem
-     *
-     */
-     @function calculateRem($size) {
-     $remSize: $size / 16px;
-     @return $remSize * 1rem;
-     }
+  /**
+   * Function to calculate Fontsize in 'rem'
+   *
+   * @group Fonts
+   *
+   * @param {int} $size - Fontsize as integer
+   *
+   * @author mg, fh
+   *
+   * @returns {int} returns calculated rem
+   *
+  */
+  @function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
 ```
 
 ```scss
-    /**
-     * Mixin to calculate Fontsize in 'rem'
-     *
-     * @group Fonts
-     *
-     * @param {int} $size - Fontsize as integer
-     *
-     * @author mg, fh
-     *
-     * @example
-     * @include font-size(14px)
-     *
-     * @requires {variable} $size - With px value
-     * @requires {function} calculateRem - Funktion to calculate $size
-     *
-     *
-     * @todo change function syntax soon
-     *
-     */
-     @mixin font-size($size) {
-     font-size: $size;
-     font-size: calculateRem($size);
-     }
+  /**
+   * Mixin to calculate Fontsize in 'rem'
+   *
+   * @group Fonts
+   *
+   * @param {int} $size - Fontsize as integer
+   *
+   * @author mg, fh
+   *
+   * @example
+   * @include font-size(14px)
+   *
+   * @requires {variable} $size - With px value
+   * @requires {function} calculateRem - Funktion to calculate $size
+   *
+   *
+   * @todo change function syntax soon
+   *
+   */
+  @mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+  }
 ```
 
 #### <a name="CodeConventions-Naming"></a>Naming
@@ -237,23 +237,23 @@ Bei Selektoren mit mehreren Eigenschaften und Werten werden diese entsprechend d
 **Beispiel mehrzeiliger Code**
 
 ```scss
-    /**
-     * + Clearfix
-     * Clear Floats
-     * @link http://nicolasgallagher.com/micro-clearfix-hack/ source we use
-     * =====================================================================
-     */
-     @mixin clearfix() {
-     &:before,
-     &:after {
-     content: " ";
-     display: table;
-     }
-     &:after {
-     clear: both;
-     }
-     }
-     /* = Clearfix */
+  /**
+   * + Clearfix
+   * Clear Floats
+   * @link http://nicolasgallagher.com/micro-clearfix-hack/ source we use
+   * =====================================================================
+   */
+  @mixin clearfix() {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  /* = Clearfix */
 ```
 
 Partials werden mit Underscore geprefixt. Bsp.: _buttons.scss, _clearfix.scss und sollten gruppiert nach nutzen in sepperaten Ordnern angelegt werden. Bsp.:
