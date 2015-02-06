@@ -299,6 +299,12 @@ Parameter mit einem * sind optional. Der Parameter &ldquo;typ&rdquo; ist immer z
 *   icon-arrow-left.png =&gt; [type]-[name]-[position].[filetype]
 *   news-gradient-header.gif =&gt; [parent|module]-[type]-[name].[filetype]
 
+Retinagrafiken bekommen noch ein Suffix entsprechend ihrer Pixeldichte. Also Beispielsweise icon-menu@2x, icon-menu@4x.
+
+Sollten für unterschiedliche Viewports unterschiedliche Grafikmodifikationen nötig sein, werden diese mit einheitlichem Suffix versehen. Also Beispielsweise header.jpg, header-mobile.jpg, header-desktop.jpg. Mit Retina Support wäre das dann header@2x.jpg, header-mobile@2x.jpg etc.
+
+Wenn es für unterschiedliche Views Modifikationen von Bildern gibt, dann werden diese auch mit einem Suffix (Doppelter Bindestrich/Minus "--") versehen. Beispiel: header-mobile–widescreen.jpg.
+
 
 <!--
 Copyright (c) 2015 Michael Gerstmann
